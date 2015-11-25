@@ -1,0 +1,32 @@
+{
+  "name": "thijskok/phpci-jshint-plugin",
+  "description": "PHPCI plugin for JSHint integration",
+  "type": "library",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Thijs Kok",
+      "email": "mail@thijskok.nl"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.3"
+  },
+  "require-dev": {
+    "block8/phpci": "1.6.x"
+  },
+  "autoload": {
+    "psr-4": {
+      "ThijsKok\\PHPCI\\Plugin\\": "src/"
+    }
+  },
+  "extra": {
+    "phpci": {
+      "pluginNamespace": "ThijsKok\\PHPCI\\Plugin\\",
+      "suppliedPlugins": [
+        {"name": "JSHint", "class": "JSHint"}
+      ]
+    }
+  }
+}
