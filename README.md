@@ -1,0 +1,1 @@
+# phpci-jshint-plugin
