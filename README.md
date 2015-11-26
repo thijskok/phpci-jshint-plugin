@@ -5,6 +5,7 @@ A plugin for PHPCI to check your Javascript using JSHint.
 ### Install the Plugin
 
 1. Navigate to your PHPCI root directory and run `composer require thijskok/phpci-jshint-plugin`
+2. Copy `build-plugins/jshint.js` to `/path/to/phpci/public/assets/js/build-plugins/jshint.js`
 2. If you are using the PHPCI daemon, restart it
 3. Update your `phpci.yml` in the project you want to deploy with
 
