@@ -114,6 +114,7 @@ class JSHint implements PHPCI\Plugin, PHPCI\ZeroConfigPlugin
 
         foreach ($xml->file as $file) {
             $fileName = (string)$file['name'];
+            $fileName = str_replace($this->phpci->buildPath, '', $fileName);
 
             foreach ($file->error as $error) {
                 $warnings++;
