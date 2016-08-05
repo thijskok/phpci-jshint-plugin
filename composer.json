@@ -14,7 +14,7 @@
     "php": ">=5.3.3"
   },
   "require-dev": {
-    "block8/phpci": "1.6.x"
+    "block8/phpci": "1.7.x"
   },
   "autoload": {
     "psr-4": {
